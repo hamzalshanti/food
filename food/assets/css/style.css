@@ -1,0 +1,273 @@
+@font-face {
+	font-family: Kayak;
+	src: url(../fonts/KayakSansRegular.otf);
+}
+@font-face {
+	font-family: KayakBold;
+	src: url(../fonts/KayakSansBold.otf);
+}
+* {
+	font-family: Kayak;
+}
+body {
+	height: 1500px;
+}
+h2 { font-family: KayakBold; }
+a,
+button{
+	background: #5fb709;
+	color: #fff;
+	outline: none;
+}
+button {
+	border: 1px solid;
+}
+a:hover {
+	text-decoration: none;
+	color: #fff;
+}
+section{
+	position: relative;
+}
+section:nth-child(odd) {
+	background: #f4f5f7;
+}
+.primary-color {
+	color: #5fb709;
+	font-family: KayakBold;
+}
+.hero-content {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.hero-img {
+	position: absolute;
+	width: 100%;
+	height: calc(100% + 100px);
+}
+@media (max-width: 992px) {
+	.hero-img {
+		position: relative;
+	}
+}
+.hero-section .onion-img {
+	position: absolute;
+	z-index: 10;
+	bottom: -28px;
+    left: 36%;
+    width: 12vw;
+}
+.discover, .find, .uber, .services, .track, .app{
+	padding-top: 200px;
+	padding-bottom: 200px;
+}
+
+section:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	bottom: 0;
+	transform-origin: right bottom;
+	transform: skewY(-5deg);
+	z-index: -1;
+}
+section:nth-child(odd):after { background: #f4f5f7; }
+section:nth-child(even):after { background: #fff; }
+section:last-child:after { all: unset; }
+.hero-section { z-index: 9; }
+.discover { z-index: 8; }
+.find{ z-index: 7; }
+.uber{ z-index: 6; }
+.discover form input {
+	border: 1px solid #f2f2f2;
+	display: inline-block;
+}
+.discover .discover-paper-img {
+    position: absolute;
+    top: 150px;
+    width: 15vw;
+    right: 15%;
+}
+.find .crumb-img {
+	bottom: 0px;
+	left: 0px;
+	width: 30vw;
+}
+.find .fo-img {
+	top: 25%;
+	width: 10vw;
+	left: 15%;
+}
+.find .egg-img {
+	top: 200px;
+	right: 0px;
+	width: 20vw;
+}
+.uber .fo-img {
+	left: 25%;
+	width: 10vw;
+}
+.uber .mush-img {
+	top: 10%;
+	right: 25%;
+	width: 15vw;
+}
+.uber .kitchen-img {
+	top: 50%;
+	right: 0;
+	width: 15vw;
+	transform: translateY(-50%);
+}
+.track .track-content {
+	z-index: 2;
+}
+.track .track-img {
+	z-index: 2;
+}
+.track .line-img{
+	left: 0;
+	bottom: 25%;
+	width: 100%;
+	z-index: 1;
+}
+.track .coffe-img { 
+	top: 20%;
+	left: 25%; 
+	width: 15vw;
+}
+.track .bread-img { 
+	bottom: 5%;
+	left: 10%;
+	width: 25vw;
+}
+
+.app .sal-img {
+	width: 150px;
+	height: 150px;
+	right: 100px;
+	top: 200px;
+}
+
+.app .herp-img {
+	right: 0px;
+	bottom: 30px;
+}
+
+.app .fo-img {
+	top: 150px;
+	left: 40%;
+	width: 10vw;
+}
+.app .so-img {
+	bottom: 30px;
+	left: 50%;
+}
+
+.services .serv-col:nth-child(odd) {
+	border-right: 1px solid #d9dadb;
+}
+@media (max-width: 992px) {
+	.services .serv-col:nth-child(odd) {
+		border-right: 0px;
+	}
+}
+
+footer { 
+	padding-top: 100px;
+	background: #262626;
+	color: #fff;
+}
+footer hr {
+	background: #3d3d3d;
+}
+footer a {
+	background: none;
+}
+footer .lang {
+	border-bottom: 1px solid #3d3d3d;
+}
+footer .lang select {
+	background: none;
+	border: 0;
+	color: #fff;
+	padding: 10px 0px;
+	outline: none;
+	background: #262626;
+}
+.copyright {
+	color: #4b4b4b;
+}
+
+
+@media (max-width: 992px) {
+	.onion-img {
+		left: 10px!important;
+	}
+	.uber .kitchen-img {
+	    top: 20%;
+	}
+
+
+}
+
+@media (max-width: 786px) {
+	.onion-img {
+		bottom: -15px!important;
+	}
+	.discover-paper-img {
+		top: 75px!important;
+	}
+	.app-uber-img {
+		width: 70px;
+	}
+	.track .line-img {
+		bottom: 13%;
+	}
+}
+
+
+@media (max-width: 768px) {
+	h2 {
+		font-size: 20px;
+	} 
+	p {
+	 	font-size: 14px;
+	}
+	h6 {
+		font-size: 15px;
+	}
+	.discover-content input,
+	.discover-content form button {
+		font-size: 12px;
+	}
+	.hero-content {
+	    padding-top: 40px;
+	    padding-bottom: 10px;
+	}
+	.discover, .find, .uber, .services, .track, .app {
+    	padding-top: 80px;
+    	padding-bottom: 35px;
+	}
+	.discover {
+		padding-top: 115px;
+	}
+	.footer-download a{
+		width: 80px;
+	}
+	section a {
+		font-size: 12px;
+	}
+	footer a {
+		font-size: 12px!important;
+	}
+}
+
+@media (max-width: 375px) {
+	h2 {
+		font-size: 14px;
+	} 
+	p {
+	 	font-size: 12px;
+	}
+}
